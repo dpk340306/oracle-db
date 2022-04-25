@@ -34,6 +34,7 @@
   <include file="jhist_dept_fk_ref_constraint.xml"/> 
   <include file="add_job_history_procedure.xml"/> 
   <include file="secure_dml_procedure.xml"/> 
+  <include file="secure_dml1_procedure.xml"/> 
   <include file="jhist_department_ix_index.xml"/> 
   <include file="emp_name_ix_index.xml"/> 
   <include file="loc_city_ix_index.xml"/> 
