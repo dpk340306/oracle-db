@@ -9,6 +9,7 @@
   <include file="departments_seq_sequence.xml"/> 
   <include file="employees_table.xml"/> 
   <include file="employees1_table.xml"/> 
+  <include file="bonus_table.xml"/> 
   <include file="locations_table.xml"/> 
   <include file="regions_table.xml"/> 
   <include file="departments_table.xml"/> 
