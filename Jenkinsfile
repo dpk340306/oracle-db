@@ -9,7 +9,7 @@ pipeline {
         stage ('Unit Test-utPLSQL') {
             steps {
                 echo 'Running utPLSQL'
-                bat 'start cmd.exe /c '}
+            }
         }
         stage ('SQL Monitor Report') {
             steps {
