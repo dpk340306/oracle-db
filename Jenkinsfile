@@ -9,7 +9,7 @@ pipeline {
         stage ('Unit Test-utPLSQL') {
             steps {
                 echo 'Running utPLSQL'
-                D:\hackathon\utPLSQL-cli\utPLSQL-cli\bin\utplsql.bat run HR/hr@//192.168.56.101:1521/orcl -f=ut_documentation_reporter -o=run.log -s -f=ut_coverage_html_reporter -o=coverage.html
+                bat "D:\hackathon\utPLSQL-cli\utPLSQL-cli\bin\utplsql.bat run HR/hr@//192.168.56.101:1521/orcl -f=ut_documentation_reporter -o=run.log -s -f=ut_coverage_html_reporter -o=coverage.html"
             }
         }
         stage ('SQL Monitor Report') {
