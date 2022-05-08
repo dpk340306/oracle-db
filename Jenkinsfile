@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo 'Running utPLSQL'
                 sh "chmod +x -R ${env.WORKSPACE}"
+                sh "cat /var/lib/jenkins/workspace/demo-pipeline-20220503-v2@tmp/durable-9c153a06/script.sh"
                 sh "/home/ec2-user/software/utPLSQL-cli/bin/utplsql run HR/hr@redhatsrvr:1521/pdborcl"
             }
         }
