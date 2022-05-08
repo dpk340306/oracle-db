@@ -9,6 +9,7 @@ pipeline {
         stage ('Unit Test-utPLSQL') {
             steps {
                 echo 'Running utPLSQL'
+                sh "/home/ec2-user/software/utPLSQL-cli/bin/utplsql run HR/hr@redhatsrvr:1521/pdborcl"
             }
         }
         stage ('SQL Monitor Report') {
