@@ -13,7 +13,7 @@ pipeline {
                 sh "echo ${env.WORKSPACE}"
                 sh "echo ${env.JOB_NAME}"
                 sh "chmod +x -R ${env.WORKSPACE}/.."
-                sh "/var/lib/jenkins/call-utPLSQL.sh"                
+                sh "/bin/bash +x /var/lib/jenkins/call-utPLSQL.sh"                
             }
         }
         stage ('SQL Monitor Report') {
