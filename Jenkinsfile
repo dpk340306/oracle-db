@@ -9,6 +9,7 @@ pipeline {
         stage ('Unit Test-utPLSQL') {
             steps {
                 echo 'Running utPLSQL'
+                sh "echo ${WORKSPACE}"
                 sh "echo ${env.WORKSPACE}"
                 sh "echo ${env.JOB_NAME}"
                 sh "chmod +x -R ${env.WORKSPACE}"
