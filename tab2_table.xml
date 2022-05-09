@@ -8,7 +8,7 @@
 	<changeSet author="deepak" id="02_tab2">
       <sqlFile dbms="oracle"
                endDelimiter=";"
-               path="./scripts/TABLES/tab2.sql"
+               path="TAB2.sql"
                relativeToChangelogFile="true"
                splitStatements="true"
                stripComments="false"/>
