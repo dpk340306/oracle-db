@@ -34,6 +34,7 @@ pipeline {
         stage ('Deploying PLSQL code to QA') {
             steps {
                 echo 'Running PLSQL code deployment to QA'
+                sh "/bin/bash +x /var/lib/jenkins/call-liquibase.sh"
             }
         }
         stage ('Deploying PLSQL code to PROD') {
