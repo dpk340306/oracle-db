@@ -19,6 +19,7 @@ pipeline {
         stage ('SQL Monitor Report') {
             steps {
                 echo 'Generating SQL Monitor Report'
+                sh "/bin/bash +x /var/lib/jenkins/call-sql_mon_util.sh"
             }
         }
         stage ('Sonar Code Scan') {
